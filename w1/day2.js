@@ -4,7 +4,6 @@
 // If num1 is equal to num2, print to the console, "These numbers are equal"
 // Bonus: If either num1 or num2 is not a valid Number data type, print to the console, "Whoa, those aren't numbers!"
 
-const num1 = "100";
+const num1 = 50;
 const num2 = 100;
 
-console.log("num1 is less than num2");
