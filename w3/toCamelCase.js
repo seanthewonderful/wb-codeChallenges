@@ -7,31 +7,60 @@
 
 // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
 
-const toCamelCase = (str) => {
-  const strArr = str.split("");
-  strArr.forEach((letter, idx) => {
-    if (idx === 0) {
-      strArr[idx] = strArr[idx].toLowerCase();
-    }
-    if (letter === "-" || letter === "_") {
-      strArr.splice(idx, 1);
-      strArr[idx] = strArr[idx].toUpperCase();
-    }
-  });
-  return strArr.join("");
-};
 
-function toCamelCase(str) {
-  let splitStr = str.replaceAll("-", " ").replaceAll("_", " ").split(" ");
-  let returnStr = splitStr[0];
 
-  for (i = 1; i < splitStr.length; i++) {
-    returnStr += splitStr[i].slice(0, 1).toUpperCase() + splitStr[i].slice(1);
-  }
 
-  return returnStr;
-}
 
-console.log(toCamelCase("the-stealth-warrior"));
-console.log(toCamelCase("The_Stealth_Warrior"));
-console.log(toCamelCase("The_Stealth-Warrior"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const toCamelCase = (str) => {
+//   const strArr = str.split("");
+//   strArr.forEach((letter, idx) => {
+//     if (idx === 0) {
+//       strArr[idx] = strArr[idx].toLowerCase();
+//     }
+//     if (letter === "-" || letter === "_") {
+//       strArr.splice(idx, 1);
+//       strArr[idx] = strArr[idx].toUpperCase();
+//     }
+//   });
+//   return strArr.join("");
+// };
+
+// function toCamelCase(str) {
+//   let splitStr = str.replaceAll("-", " ").replaceAll("_", " ").split(" ");
+//   let returnStr = splitStr[0];
+
+//   for (i = 1; i < splitStr.length; i++) {
+//     returnStr += splitStr[i].slice(0, 1).toUpperCase() + splitStr[i].slice(1);
+//   }
+
+//   return returnStr;
+// }
+
+// console.log(toCamelCase("the-stealth-warrior"));
+// console.log(toCamelCase("The_Stealth_Warrior"));
+// console.log(toCamelCase("The_Stealth-Warrior"));

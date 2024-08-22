@@ -6,11 +6,16 @@
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
 
+
 function complimentaryDNA(dna) {
-    let compliments = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
+    let compliments = {
+      'A': 'T', 
+      'T': 'A', 
+      'C': 'G', 
+      'G': 'C'
+    }
 
     return dna.split('').map(char => compliments[char]).join('')
-
 }
 
 console.log(complimentaryDNA("CGATT"))

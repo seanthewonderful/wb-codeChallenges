@@ -4,34 +4,76 @@
 // itemInArrayCount(['cat', 'dog', 'mouse', 'cat', 'fox'], 'cat') --> 2
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // define function
-function itemInArrayCount(item, array) {
-  let count = 0
+// function itemInArrayCount(item, array) {
+//   let count = 0
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === item) {
-      count++
-    }
-  }
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === item) {
+//       count++
+//     }
+//   }
 
-  return `The array: '${array}' contains '${item}' ${count} times!`
-}
-
-
+//   return `The array: '${array}' contains '${item}' ${count} times!`
+// }
 
 
-// invoke function
-let testItem = 'cat'
-let testArray = ['cat', 'dog', 'mouse', 'cat', 'fox']
 
-console.log(itemInArrayCount(testItem, testArray))
-console.log()
 
-let testItemTwo
-let testArrayTwo = [undefined, undefined, undefined, undefined, undefined]
+// // invoke function
+// let testItem = 'cat'
+// let testArray = ['cat', 'dog', 'mouse', 'cat', 'fox']
 
-console.log(itemInArrayCount(testItemTwo, testArrayTwo))
-console.log()
+// console.log(itemInArrayCount(testItem, testArray))
+// console.log()
+
+// let testItemTwo
+// let testArrayTwo = [undefined, undefined, undefined, undefined, undefined]
+
+// console.log(itemInArrayCount(testItemTwo, testArrayTwo))
+// console.log()
 
 
 
@@ -61,14 +103,14 @@ console.log()
 
 
 function itemInArrayCount(arr, item) {
-    let count = 0
-    for (const element of arr) {
-        if (element === item) {
-            count ++
-        }
+  let count = 0
+  for (const element of arr) {
+    if (element === item) {
+      count++
     }
-    
-    return count
+  }
+
+  return count
 }
 
 

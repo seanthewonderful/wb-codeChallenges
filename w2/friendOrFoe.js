@@ -7,8 +7,18 @@
 // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 // Note: keep the original order of the names in the output.
 
-function friendOrFoe(names) {
-    return names.filter(name => name.length === 4)
-}
 
-console.log(friendOrFoe(["Sean", "Natalie", "Rory", "Billie"]))
+
+
+
+
+
+
+
+
+
+// function friendOrFoe(names) {
+//     return names.filter(name => name.length === 4)
+// }
+
+// console.log(friendOrFoe(["Sean", "Natalie", "Rory", "Billie"]))
