@@ -1,29 +1,19 @@
-// Find the Odd Int
+/*
+Find the Odd Int
 
-// https://www.codewars.com/kata/54da5a58ea159efa38000836
+https://www.codewars.com/kata/54da5a58ea159efa38000836
 
-// The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+Given an array of integers, find the one that appears an odd number of times.
 
-// Examples
-// "din"      =>  "((("
-// "recede"   =>  "()()()"
-// "Success"  =>  ")())())"
-// "(( @"     =>  "))(("
+There will always be only one integer that appears an odd number of times.
+
+Examples
+[7] should return 7, because it occurs 1 time (which is odd).
+[0] should return 0, because it occurs 1 time (which is odd).
+[1,1,2] should return 2, because it occurs 1 time (which is odd).
+[0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+[1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+
+*/
 
 
-
-
-// Codeium solution
-function duplicateEncode(word){
-  let wordArr = word.toLowerCase().split('')
-  let newWord = ''
-  for (let i = 0; i < wordArr.length; i++) {
-    let count = wordArr.filter(letter => letter === wordArr[i]).length
-    if (count > 1) {
-      newWord += ')'
-    } else {
-      newWord += '('
-    }
-  }
-  return newWord
-}

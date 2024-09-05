@@ -11,16 +11,21 @@
 
 
 // Codeium solution
-function duplicateEncode(word){
-  let wordArr = word.toLowerCase().split('')
-  let newWord = ''
-  for (let i = 0; i < wordArr.length; i++) {
-    let count = wordArr.filter(letter => letter === wordArr[i]).length
-    if (count > 1) {
-      newWord += ')'
-    } else {
-      newWord += '('
-    }
-  }
-  return newWord
-}
+// function duplicateEncode(word) {
+//   let wordArr = word.toLowerCase().split('')
+//   let newWord = ''
+
+//   for (let i = 0; i < wordArr.length; i++) {
+//     let count = wordArr.filter(letter => letter === wordArr[i]).length
+//     if (count > 1) {
+//       newWord += ')'
+//     } else {
+//       newWord += '('
+//     }
+//   }
+//   return newWord
+// }
+
+console.log(duplicateEncoder("din"))
+// console.log(duplicateEncode("recede"))
+// console.log(duplicateEncode("Success"))
